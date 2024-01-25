@@ -50,7 +50,7 @@ try_set = datasets.ImageFolder("Denemeset",transform=TestTransforms()) # Change 
 
 train_loader_f = DataLoader(train_dataset,48,sampler=ImbalancedDatasetSampler(train_dataset))
 test_loader_f = DataLoader(test_dataset,48 )
-try_set = DataLoader(try_set,1)
+try_set_f = DataLoader(try_set,1)
 
 
 
